@@ -1,0 +1,175 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    body{
+      background: url(http://wrbbradio.org/wp-content/uploads/2016/10/grey-background-07.jpg) no-repeat center fixed;
+      background-size: cover;
+    }
+    
+    .container{
+        background: #00e8f4;
+        width: 350px;
+        height: 400px;
+        padding-bottom: 20px;
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: auto;
+      padding: 70px 50px 20px 50px;
+    }
+    
+    
+    .fl{
+        float: left;
+      width: 110px;
+      line-height: 35px;
+    }
+    
+    .fontLabel{
+      color: white;
+    }
+    
+    .fr{
+        float: right;
+    }
+    
+    .clr{
+        clear: both;
+    }
+    
+    .box{
+        width: 360px;
+        height: 35px;
+        margin-top: 10px;
+        font-family: verdana;
+        font-size: 12px;
+    }
+    
+    .textBox{
+        height: 35px;
+        width: 190px;
+        border: none;
+      padding-left: 20px;
+    }
+    
+    .new{
+      float: left;
+    }
+    
+    .iconBox{
+        height: 35px;
+        width: 40px;
+        line-height: 38px;
+        text-align: center;
+      background: #ff6600;
+    }
+    
+    .radio{
+        color: white;
+        background: #c42c96;
+        line-height: 38px;
+    }
+    
+    .terms{
+        line-height: 35px;
+        text-align: center;
+        background: #4e406e;
+        color: rgb(73, 150, 143);
+    }
+    
+    .submit{
+        float: right;
+        border: none;
+        color: rgb(218, 87, 87);
+        width: 110px;
+        height: 35px;
+        background: hwb(115 0% 0%);
+        text-transform: uppercase;
+      cursor: pointer;
+    }
+</style>  
+</head>  
+<body>  
+<form action="/register" method="POST">  
+  <!--First name-->
+  <div class="box">
+    <label for="firstName" class="fl fontLabel"> First Name: </label>
+          <div class="new iconBox">
+      <i class="fa fa-user" aria-hidden="true"></i>
+    </div>
+          <div class="fr">
+                  <input type="text" name="firstName" placeholder="First Name"
+        class="textBox" autofocus="on" required>
+          </div>
+          <div class="clr"></div>
+      </div>
+      <!--First name-->
+
+
+  <!--Second name-->
+      <div class="box">
+    <label for="secondName" class="fl fontLabel"> Last Name </label>
+          <div class="fl iconBox"><i class="fa fa-user" aria-hidden="true"></i></div>
+          <div class="fr">
+                  <input type="text" required name="secondName"
+        placeholder="Last Name" class="textBox">
+          </div>
+          <div class="clr"></div>
+      </div>
+      <!--Second name-->
+      <!---Email ID---->
+      <div class="box">
+        <label for="email" class="fl fontLabel"> Date Of Bitrth  </label>
+              <div class="fl iconBox"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+              <div class="fr">
+                      <input type="date" required name="DOB" placeholder="DOB" class="textBox">
+              </div>
+              <div class="clr"></div>
+          </div>
+          <!--Email ID----->
+
+
+      <!---Phone No.------>
+      <div class="box">
+    <label for="phone" class="fl fontLabel"> Pin number </label>
+          <div class="fl iconBox"><i class="fa fa-phone-square" aria-hidden="true"></i></div>
+          <div class="fr">
+                  <input type="text" required name="pin number" maxlength="10" placeholder="pin number" class="textBox">
+          </div>
+          <div class="clr"></div>
+      </div>
+      <!---Phone No.---->
+
+
+      
+
+
+     
+
+      <!---Gender----->
+      <div class="box radio">
+    <label for="gender" class="fl fontLabel"> Gender: </label>
+              <input type="radio" name="Gender" value="Male" required> Male &nbsp; &nbsp; &nbsp; &nbsp;
+              <input type="radio" name="Gender" value="Female" required> Female
+      </div>
+      <!---Gender--->
+
+
+     
+
+
+
+      <!---Submit Button------>
+      <div class="box" style="background: #2d3e3f">
+              <input type="Submit" name="Submit" class="submit" value="SUBMIT">
+      </div>   
+</form>  
+</body>  
+</html>
